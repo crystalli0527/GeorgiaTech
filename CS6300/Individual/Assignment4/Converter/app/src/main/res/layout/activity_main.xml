@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.seclass.converter.ConverterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Distance Converter"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <TextView
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="From:"
+                android:id="@+id/textView2" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mi"
+                    android:id="@+id/rbFromMile"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:id="@+id/rbFromKm"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in"
+                    android:id="@+id/rbFromInch"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"
+                    android:id="@+id/rbFromCm"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft"
+                    android:id="@+id/rbFromFeet"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:id="@+id/rbFromM"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="To:"
+                android:id="@+id/textView3" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mi"
+                    android:id="@+id/rbToMile"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:id="@+id/rbToKm"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in"
+                    android:id="@+id/rbToInch"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"
+                    android:id="@+id/rbToCm"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft"
+                    android:id="@+id/rbToFeet"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:id="@+id/rbToM"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Input:"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/distValue"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Result:"
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/distResult"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert"
+                android:id="@+id/buttonConvert"
+                android:layout_weight="1"
+                android:onClick="handleClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/buttonReset"
+                android:layout_weight="1"
+                android:onClick="handleClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

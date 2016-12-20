@@ -1,0 +1,9 @@
+# Bad topology where C doesn't have a backlink to B. For testing purposes.
+# A --- B --> C
+# |     |
+# D --- E
+A,B,1,D,2
+B,A,1,E,3,C,1
+C
+D,A,2,E,3
+E,D,3,B,3

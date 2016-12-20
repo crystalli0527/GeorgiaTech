@@ -1,0 +1,1 @@
+Task Card #3.3: Extend the Course class so that it provides a way to add/update individual contribution grades (if there is already an individual contribution value, the value gets suitably updated with the new one).

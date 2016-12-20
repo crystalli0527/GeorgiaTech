@@ -1,0 +1,35 @@
+package edu.gatech.seclass.project3;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+
+/*Story Card #1: 
+“The instructor (or the TA) launches the GradesCalculator tool to get information about the students and the class. 
+The application outputs on screen the number of students and information about each student: name, GTID, email, attendance, and team number. 
+It also prints the number of assignments and projects given so far. 
+After that, it asks the users if they want to continue or exit. In the former case, it outputs the information again.”
+*/
+
+
+public class GradesCalculator {
+
+	public static void main(String[] args) {
+		//Get the workbook instance for XLS file 
+		FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));
+		HSSFWorkbook workbook = new HSSFWorkbook(file);
+		//Get first sheet from the workbook
+		HSSFSheet sheet = workbook.getSheetAt(0);
+		
+		
+		System.out.println("Ran GradesCalculator");
+		
+	}
+	
+}
+
+
+

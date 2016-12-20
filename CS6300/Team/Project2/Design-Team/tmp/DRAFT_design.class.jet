@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_95" class="java.beans.XMLDecoder">
+ <object class="ca.mcgill.cs.stg.jetuml.diagrams.ClassDiagramGraph">
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode0">
+    <void property="attributes">
+     <void property="text">
+      <string>name: String
+email: String
+hexId: String
+vipDiscountYear: Date
+discount: double
+credit: double
+creditExpiration: Date
+</string>
+     </void>
+    </void>
+    <void id="Rectangle2D$Double0" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double0"/>
+       <double>220.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double0"/>
+       <double>560.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double0"/>
+       <double>160.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>height</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double0"/>
+       <double>160.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double0"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Customer</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double0">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>220.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>560.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode1">
+    <void property="attributes">
+     <void property="text">
+      <string>date: Date
+preDiscountTotal: double
+postDiscountTotall: double
+vipDiscountApplied: double</string>
+     </void>
+    </void>
+    <void id="Rectangle2D$Double1" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double1"/>
+       <double>220.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double1"/>
+       <double>360.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double1"/>
+       <double>180.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>height</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double1"/>
+       <double>100.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double1"/>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Transaction</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double1">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>220.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>360.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.InterfaceNode" id="InterfaceNode0">
+    <void id="Rectangle2D$Double2" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double2"/>
+       <double>830.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double2"/>
+       <double>380.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double2"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«interface»
+VideoCam</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double2">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>830.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>380.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.InterfaceNode" id="InterfaceNode1">
+    <void id="Rectangle2D$Double3" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double3"/>
+       <double>830.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double3"/>
+       <double>490.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double3"/>
+       <double>140.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double3"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«External Library»
+Printer</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double3">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>830.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>490.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.InterfaceNode" id="InterfaceNode2">
+    <void id="Rectangle2D$Double4" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double4"/>
+       <double>250.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double4"/>
+       <double>40.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double4"/>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Send email</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«Interface»
+Email Server</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double4">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>250.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>40.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode2">
+    <void property="attributes">
+     <void property="text">
+      <string>QRCode</string>
+     </void>
+    </void>
+    <void id="Rectangle2D$Double5" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double5"/>
+       <double>1010.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double5"/>
+       <double>440.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double5"/>
+       <double>140.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double5"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«Physical Object»
+Customer Card</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double5">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>1010.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>440.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.InterfaceNode" id="InterfaceNode3">
+    <void id="Rectangle2D$Double6" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double6"/>
+       <double>40.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double6"/>
+       <double>40.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double6"/>
+       <double>160.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double6"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«External Library»
+Credit Card Scanner</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double6">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>40.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>40.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.InterfaceNode" id="InterfaceNode4">
+    <void id="Rectangle2D$Double7" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double7"/>
+       <double>410.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double7"/>
+       <double>40.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double7"/>
+       <double>140.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double7"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«External Library»
+Payment System
+
+</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double7">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>410.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>40.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode3">
+    <void id="Rectangle2D$Double8" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double8"/>
+       <double>220.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double8"/>
+       <double>150.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double8"/>
+       <double>160.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>height</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double8"/>
+       <double>120.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double8"/>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>processTransaction()
+calculateVipStatus()
+calculateNewCredit()
+applyVipDiscount()
+applyCredit()</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>TransactionManager</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double8">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>220.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>150.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.PointNode"/>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double9">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>1207.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>302.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode4">
+    <void id="Rectangle2D$Double9" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double9"/>
+       <double>520.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double9"/>
+       <double>600.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double9"/>
+       <double>120.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double9"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«UI Screen»
+EditCustomer</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double10">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>520.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>600.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode5">
+    <void id="Rectangle2D$Double10" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double10"/>
+       <double>520.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double10"/>
+       <double>180.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double10"/>
+       <double>120.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double10"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«UI Screen»
+EnterPurchase</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double11">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double11"/>
+      <double>520.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double11"/>
+      <double>180.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.ClassNode" id="ClassNode6">
+    <void id="Rectangle2D$Double11" property="bounds">
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double11"/>
+       <double>520.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double11"/>
+       <double>380.0</double>
+      </void>
+     </void>
+     <void class="java.awt.geom.Rectangle2D$Double" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle2D$Double11"/>
+       <double>220.0</double>
+      </void>
+     </void>
+    </void>
+    <void property="bounds">
+     <object idref="Rectangle2D$Double11"/>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>«UI Screen»
+ViewPurchaseRewardHistory</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double12">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double12"/>
+      <double>520.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double12"/>
+      <double>380.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.AssociationEdge">
+    <void property="directionality">
+     <object class="java.lang.Enum" id="AssociationEdge$Directionality0" method="valueOf">
+      <class>ca.mcgill.cs.stg.jetuml.graph.AssociationEdge$Directionality</class>
+      <string>End</string>
+     </object>
+    </void>
+    <void property="endLabel">
+     <string>*</string>
+    </void>
+    <void property="middleLabel">
+     <string>creates</string>
+    </void>
+    <void property="startLabel">
+     <string>1</string>
+    </void>
+   </object>
+   <object idref="ClassNode3"/>
+   <object idref="ClassNode1"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode3"/>
+   <object idref="InterfaceNode2"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="InterfaceNode1"/>
+   <object idref="ClassNode2"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="InterfaceNode0"/>
+   <object idref="ClassNode2"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode3"/>
+   <object idref="InterfaceNode4"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode3"/>
+   <object idref="InterfaceNode3"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.AssociationEdge">
+    <void property="directionality">
+     <object idref="AssociationEdge$Directionality0"/>
+    </void>
+    <void property="endLabel">
+     <string>*</string>
+    </void>
+    <void property="middleLabel">
+     <string>initiates</string>
+    </void>
+    <void property="startLabel">
+     <string>1</string>
+    </void>
+   </object>
+   <object idref="ClassNode0"/>
+   <object idref="ClassNode1"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.AssociationEdge">
+    <void property="directionality">
+     <object idref="AssociationEdge$Directionality0"/>
+    </void>
+    <void property="endLabel">
+     <string>*</string>
+    </void>
+    <void property="middleLabel">
+     <string>creates/edits</string>
+    </void>
+   </object>
+   <object idref="ClassNode4"/>
+   <object idref="ClassNode0"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode4"/>
+   <object idref="InterfaceNode1"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode4"/>
+   <object idref="InterfaceNode0"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.AssociationEdge">
+    <void property="directionality">
+     <object idref="AssociationEdge$Directionality0"/>
+    </void>
+    <void property="endLabel">
+     <string>*</string>
+    </void>
+    <void property="middleLabel">
+     <string>lists</string>
+    </void>
+   </object>
+   <object idref="ClassNode6"/>
+   <object idref="ClassNode1"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.AssociationEdge">
+    <void property="directionality">
+     <object idref="AssociationEdge$Directionality0"/>
+    </void>
+    <void property="endLabel">
+     <string>1</string>
+    </void>
+    <void property="middleLabel">
+     <string>calls</string>
+    </void>
+   </object>
+   <object idref="ClassNode5"/>
+   <object idref="ClassNode3"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode6"/>
+   <object idref="InterfaceNode0"/>
+  </void>
+  <void method="connect">
+   <object class="ca.mcgill.cs.stg.jetuml.graph.DependencyEdge"/>
+   <object idref="ClassNode5"/>
+   <object idref="InterfaceNode0"/>
+  </void>
+ </object>
+</java>

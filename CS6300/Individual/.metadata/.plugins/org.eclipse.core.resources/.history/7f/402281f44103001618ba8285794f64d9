@@ -1,0 +1,105 @@
+package edu.gatech.seclass.project3;
+
+import java.io.*;
+import java.util.*;
+import org.apache.poi.xssf.usermodel.*;
+import org.apache.poi.ss.usermodel.*;
+
+
+//import org.apache.poi.hssf.usermodel.HSSFSheet;
+//import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+
+
+/*Task Card #1.4: 
+Develop a Course class that is able to access both the students and grades data through the corresponding classes. 
+The Course class shall be the interface between the GradesCalculator tool and the underlying database.
+*/
+
+public class Course {
+
+	public Course(String db) {
+		// probably loads the excel file here
+		// takes a String (file input) and gets it ready for parsing.
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int getNumStudents() {
+        int cellCount = -1; // starting at -1 since top row isn't a student, off by one stuff
+		try {	    
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+		 
+		    //Sheet 0 is Students
+		    XSSFSheet sheet = workbook.getSheetAt(0);
+		     
+		    //Iterate through each rows from first sheet
+		    Iterator<Row> rowIterator = sheet.iterator();
+		    while(rowIterator.hasNext()) {
+		        rowIterator.next();
+	            cellCount++;    
+		    }
+		    file.close();   
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return cellCount;
+	}
+
+	public int getNumAssignments() {
+	// Source: http://stackoverflow.com/questions/18489817/get-number-of-columns-of-a-particular-row-in-given-excel
+		try {
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+	
+		    // Sheet 3 is Assignments
+		    XSSFSheet sheet = workbook.getSheetAt(3);
+			return sheet.getRow(0).getPhysicalNumberOfCells() - 1;
+
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return -1; // shouldn't get here, error
+	}
+
+	public int getNumProjects() {
+		try {
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+	
+		    // Sheet 4 is Projects
+		    XSSFSheet sheet = workbook.getSheetAt(4);
+			return sheet.getRow(0).getPhysicalNumberOfCells() - 1;
+
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return -1; // shouldn't get here, error
+	}
+
+	public HashSet<Student> getStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Student getStudentByName(String string) {
+		Student student = new Student();
+		student.setAttendance(98)
+		return student;
+	}
+
+	public Student getStudentByID(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

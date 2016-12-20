@@ -1,0 +1,15 @@
+# Single Loop topology, with a negative edge weight
+# A--(2)--B--(10)--C
+# |       |
+#(5)     (1)
+# |       |
+# D--(1)--E
+#
+# File Format:
+# Node, Neighbor, Weight, Neighbor, Weight  (repeat as needed)
+#
+A,B,2,D,5
+B,A,2,C,10,E,1
+C,B,10
+D,A,5,E,1
+E,B,1,D,1

@@ -1,0 +1,1124 @@
+
+Test Case 1  		<error>
+   Using input from stdin :  No input from stdin
+
+
+Test Case 2  		<error>
+   Using output from stdout as input :  No input from stdout
+
+
+Test Case 3  		<single>
+   Number of flags passed :  Zero
+
+
+Test Case 4  		<error>
+   Number of flags passed :  Four or more
+
+
+Test Case 5  		<error>
+   Was -f passed :  No
+
+
+Test Case 6  		<error>
+   Were -f fields syntactically correct :  No
+
+
+Test Case 7  		<error>
+   Were -c fields syntactically correct :  No
+
+
+Test Case 8  		<error>
+   Were -d fields syntactically correct :  No delimiter passed
+
+
+Test Case 9  		<error>
+   Were -d fields syntactically correct :  Unenclosed quotes
+
+
+Test Case 10 		<error>
+   Value of -c fields :  <1
+
+
+Test Case 11 		<error>
+   Value of -c fields :  >MAXLENGTH
+
+
+Test Case 12 		(Key = 1.2.2.2.2.1.1.2.0.0.1.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 13 		(Key = 1.2.2.2.2.1.1.2.0.0.2.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 14 		(Key = 1.2.2.2.2.1.1.2.0.0.3.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 15 		(Key = 1.2.2.2.2.1.2.2.0.3.1.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 16 		(Key = 1.2.2.2.2.1.2.2.0.3.2.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 17 		(Key = 1.2.2.2.2.1.2.2.0.3.3.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 18 		(Key = 1.2.2.2.2.1.2.2.0.4.1.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 19 		(Key = 1.2.2.2.2.1.2.2.0.4.2.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 20 		(Key = 1.2.2.2.2.1.2.2.0.4.3.0.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 21 		(Key = 1.2.2.2.2.2.1.2.2.0.1.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 22 		(Key = 1.2.2.2.2.2.1.2.2.0.2.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 23 		(Key = 1.2.2.2.2.2.1.2.2.0.3.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 24 		(Key = 1.2.2.2.2.2.2.2.2.3.1.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 25 		(Key = 1.2.2.2.2.2.2.2.2.3.2.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 26 		(Key = 1.2.2.2.2.2.2.2.2.3.3.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 27 		(Key = 1.2.2.2.2.2.2.2.2.4.1.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 28 		(Key = 1.2.2.2.2.2.2.2.2.4.2.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 29 		(Key = 1.2.2.2.2.2.2.2.2.4.3.2.)
+   Using input from a file corresponding to file arg :  No files
+   Using input from stdin                            :  Input
+   Using output from stdout as input                 :  Input
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 30 		(Key = 2.0.0.2.2.1.1.2.0.0.1.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 31 		(Key = 2.0.0.2.2.1.1.2.0.0.2.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 32 		(Key = 2.0.0.2.2.1.1.2.0.0.3.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 33 		(Key = 2.0.0.2.2.1.2.2.0.3.1.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 34 		(Key = 2.0.0.2.2.1.2.2.0.3.2.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 35 		(Key = 2.0.0.2.2.1.2.2.0.3.3.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 36 		(Key = 2.0.0.2.2.1.2.2.0.4.1.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 37 		(Key = 2.0.0.2.2.1.2.2.0.4.2.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 38 		(Key = 2.0.0.2.2.1.2.2.0.4.3.0.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 39 		(Key = 2.0.0.2.2.2.1.2.2.0.1.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 40 		(Key = 2.0.0.2.2.2.1.2.2.0.2.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 41 		(Key = 2.0.0.2.2.2.1.2.2.0.3.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 42 		(Key = 2.0.0.2.2.2.2.2.2.3.1.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 43 		(Key = 2.0.0.2.2.2.2.2.2.3.2.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 44 		(Key = 2.0.0.2.2.2.2.2.2.3.3.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 45 		(Key = 2.0.0.2.2.2.2.2.2.4.1.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 46 		(Key = 2.0.0.2.2.2.2.2.2.4.2.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 47 		(Key = 2.0.0.2.2.2.2.2.2.4.3.2.)
+   Using input from a file corresponding to file arg :  Empty file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 48 		(Key = 3.0.0.2.2.1.1.2.0.0.1.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 49 		(Key = 3.0.0.2.2.1.1.2.0.0.2.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 50 		(Key = 3.0.0.2.2.1.1.2.0.0.3.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 51 		(Key = 3.0.0.2.2.1.2.2.0.3.1.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 52 		(Key = 3.0.0.2.2.1.2.2.0.3.2.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 53 		(Key = 3.0.0.2.2.1.2.2.0.3.3.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 54 		(Key = 3.0.0.2.2.1.2.2.0.4.1.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 55 		(Key = 3.0.0.2.2.1.2.2.0.4.2.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 56 		(Key = 3.0.0.2.2.1.2.2.0.4.3.0.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 57 		(Key = 3.0.0.2.2.2.1.2.2.0.1.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 58 		(Key = 3.0.0.2.2.2.1.2.2.0.2.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 59 		(Key = 3.0.0.2.2.2.1.2.2.0.3.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 60 		(Key = 3.0.0.2.2.2.2.2.2.3.1.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 61 		(Key = 3.0.0.2.2.2.2.2.2.3.2.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 62 		(Key = 3.0.0.2.2.2.2.2.2.3.3.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 63 		(Key = 3.0.0.2.2.2.2.2.2.4.1.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 64 		(Key = 3.0.0.2.2.2.2.2.2.4.2.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 65 		(Key = 3.0.0.2.2.2.2.2.2.4.3.2.)
+   Using input from a file corresponding to file arg :  One file
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 66 		(Key = 4.0.0.2.2.1.1.2.0.0.1.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 67 		(Key = 4.0.0.2.2.1.1.2.0.0.2.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 68 		(Key = 4.0.0.2.2.1.1.2.0.0.3.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 69 		(Key = 4.0.0.2.2.1.2.2.0.3.1.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 70 		(Key = 4.0.0.2.2.1.2.2.0.3.2.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 71 		(Key = 4.0.0.2.2.1.2.2.0.3.3.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 72 		(Key = 4.0.0.2.2.1.2.2.0.4.1.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 73 		(Key = 4.0.0.2.2.1.2.2.0.4.2.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 74 		(Key = 4.0.0.2.2.1.2.2.0.4.3.0.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  No
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  <n/a>
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  <n/a>
+
+
+Test Case 75 		(Key = 4.0.0.2.2.2.1.2.2.0.1.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 76 		(Key = 4.0.0.2.2.2.1.2.2.0.2.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 77 		(Key = 4.0.0.2.2.2.1.2.2.0.3.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  No
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  <n/a>
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 78 		(Key = 4.0.0.2.2.2.2.2.2.3.1.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 79 		(Key = 4.0.0.2.2.2.2.2.2.3.2.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 80 		(Key = 4.0.0.2.2.2.2.2.2.3.3.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct and butted against -d
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 81 		(Key = 4.0.0.2.2.2.2.2.2.4.1.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  No
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 82 		(Key = 4.0.0.2.2.2.2.2.2.4.2.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Repeated value
+   Value of -c fields                                :  1 to MAXLENGTH
+
+
+Test Case 83 		(Key = 4.0.0.2.2.2.2.2.2.4.3.2.)
+   Using input from a file corresponding to file arg :  Multiple files
+   Using input from stdin                            :  <n/a>
+   Using output from stdout as input                 :  <n/a>
+   Number of flags passed                            :  One to Three
+   Was -f passed                                     :  Yes
+   Was -c passed                                     :  Yes
+   Was -d passed                                     :  Yes
+   Were -f fields syntactically correct              :  Yes
+   Were -c fields syntactically correct              :  Yes
+   Were -d fields syntactically correct              :  Correct using enclosed quotes
+   Were -f fields within range                       :  Yes
+   Value of -c fields                                :  1 to MAXLENGTH
+

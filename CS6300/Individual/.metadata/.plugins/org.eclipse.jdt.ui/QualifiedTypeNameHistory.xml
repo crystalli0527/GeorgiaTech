@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
+<fullyQualifiedTypeName name="sun.org.mozilla.javascript.ObjToIntMap.Iterator"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFWorkbook"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.WorkbookFactory"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!-- !!! SWITCH DURING DEV !!! -->
+    <!-- <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar"> -->
+    <!-- !!! ^ WILL FIX THE RENDER ERROR IN EDITOR AFTER STARTING THE EMULATOR !!! -->
+    <!-- !!! ^ BUT WILL REMOVE THE TCCart FROM THE TITLE BAR !!! -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

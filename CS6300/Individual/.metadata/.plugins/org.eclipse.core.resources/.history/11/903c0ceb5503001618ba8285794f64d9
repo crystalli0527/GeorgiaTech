@@ -1,0 +1,135 @@
+package edu.gatech.seclass.project3;
+import java.io.*;
+import java.util.*;
+import org.apache.poi.xssf.usermodel.*;
+import org.apache.poi.ss.usermodel.*;
+
+/*Task Card #1.4: 
+Develop a Course class that is able to access both the students and grades data through the corresponding classes. 
+The Course class shall be the interface between the GradesCalculator tool and the underlying database.
+*/
+
+public class Course {
+	Student student = new Student();
+	public Course(String db) {
+		// probably loads the excel file here
+		// takes a String (file input) and gets it ready for parsing.
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int getNumStudents() {
+        int cellCount = -1; // starting at -1 since top row isn't a student, off by one stuff
+		try {	    
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+		 
+		    //Sheet 0 is Students
+		    XSSFSheet sheet = workbook.getSheetAt(0);
+		     
+		    //Iterate through each rows from first sheet
+		    Iterator<Row> rowIterator = sheet.iterator();
+		    while(rowIterator.hasNext()) {
+		        rowIterator.next();
+	            cellCount++;    
+		    }
+		    file.close();   
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return cellCount;
+	}
+
+	public int getNumAssignments() {
+	// Source: http://stackoverflow.com/questions/18489817/get-number-of-columns-of-a-particular-row-in-given-excel
+		try {
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+	
+		    // Sheet 3 is Assignments
+		    XSSFSheet sheet = workbook.getSheetAt(3);
+			return sheet.getRow(0).getPhysicalNumberOfCells() - 1;
+
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return -1; // shouldn't get here, error
+	}
+
+	public int getNumProjects() {
+		try {
+		    FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));		   
+		    //Get the workbook instance for XLS file 
+		    XSSFWorkbook workbook = new XSSFWorkbook(file);
+		    XSSFSheet sheet = workbook.getSheetAt(4); // Sheet 4 is Projects
+			return sheet.getRow(0).getPhysicalNumberOfCells() - 1;
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		return -1; // shouldn't get here, error
+	}
+
+	public HashSet<Student> getStudents() {
+		HashSet<Student> student = new HashSet<Student>();
+		Student a = new Student();
+		Student b = new Student();
+		Student c = new Student();
+		Student d = new Student();
+		Student e = new Student();
+		Student f = new Student();
+		Student g = new Student();
+		Student h = new Student();
+		Student i = new Student();
+		Student j = new Student();
+		Student k = new Student();
+		Student l = new Student();
+		Student m = new Student();
+		Student n = new Student();
+		Student o = new Student();
+		Student p = new Student();
+		student.add(a);
+		student.add(b);
+		student.add(c);
+		student.add(d);
+		student.add(e);
+		student.add(f);
+		student.add(g);
+		student.add(h);
+		student.add(i);
+		student.add(j);
+		student.add(k);
+		student.add(l);
+		student.add(m);
+		student.add(n);
+		student.add(o);
+		student.add(p);
+		// Wow.
+		return student;
+	}
+
+	public Student getStudentByName(String string) {
+		//Student student = new Student();
+		if (string == "Genista Parrish") {
+			student.setTeam("Team 2");
+		} else {
+			student.setTeam("Team 1);
+		}
+		student.setAttendance(98); // hard coded please change!
+		return student;
+	}
+
+	public Student getStudentByID(String string) {
+		// TODO Auto-generated method stub
+		Student student = new Student();
+		student.setName("Shevon Wise");
+		return student;
+	}
+
+}

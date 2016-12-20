@@ -1,0 +1,23 @@
+# Complex Looping Topology, contains 0 weight links.
+# A--(3)--B--(0)--C
+#         |
+#        (5)
+#         |
+# D--(3)--E--(2)--F
+# |       |       |
+#(0)     (1)     (3)
+# |       |       |
+# G--(2)--H--(3)--J
+#
+# File Format:
+# Node, Neighbor, Weight, Neighbor, Weight  (repeat as needed)
+#
+A,B,3
+B,A,3,C,0,E,5
+C,B,0
+D,E,3,G,0
+E,B,5,D,3,F,2,H,1
+F,E,2,J,3
+G,D,0,H,2
+H,E,1,G,2,J,3
+J,F,3,H,3

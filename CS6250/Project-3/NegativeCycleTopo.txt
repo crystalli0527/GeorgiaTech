@@ -1,0 +1,15 @@
+# Topology with Negative Cycle, also includes multiple character node names.
+# AA--(1)---AB--(2)--AAC
+# |         |
+#(2)       (-3)
+# |         |
+# XY--(-1)--YZ
+#
+# File Format:
+# Node, Neighbor, Weight, Neighbor, Weight  (repeat as needed)
+#
+AA,AB,1,XY,2
+AB,AA,1,AAC,2,YZ,-3
+AAC,AB,2
+XY,AA,2,YZ,-1
+YZ,AB,-3,XY,-1

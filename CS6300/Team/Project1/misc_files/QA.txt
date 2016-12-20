@@ -1,0 +1,336 @@
+if a mr and period is a delimiter then it will count as a sentence up to that delimiter
+
+Lauren said they're just emailing her raw text files. Does that mean we should expect all input to be regular .txt files? do not have to check if a txt file
+
+
+should just be a number and two decimal points
+
+
+Lauren said > 3 LETTERS make a word rather than greater than 3 characters. Does she really mean characters? Do digits ever count as words? How many digits? Does punctuation count in the > 3 letters needed to make a word-- For example, is "it's" a word?
+
+greater than 3 characters or up is considered a word
+
+Can student pass multiple file names as filepath parameter, separated by comma(or any other delimiter)?
+just read one file at a time
+
+10. How are numbers handled (e.g., would "1234" be considered a word?)?
+
+yes as long as 1234 are consecutive, and a space
+
+If a command line flag “-d" or "-l" does not have an argument, should the program use defaults or throw an error message?
+
+no, just throw an error message
+
+-Do contractions and hyphenated words count as 1 word or 2? -When delimiters are used for reasons other than ending a sentence do we still count it as the end of the sentence (i.e. periods used for acronyms and decimal points for example) ?
+
+same thing as before, as soon as delimiter means end of sentence
+
+what written language? does not matter
+
+Do we assume user provides a text (ascii) file, or do we need to validate that we’re dealing with a text file and not something else (non ascii)?
+
+assume that the user provides a text file sequence of ascii text file
+
+How many words are in the typical essay? What are the estimated file sizes?
+
+no file size is reasonable or un reasonable
+
+Do we need to handle situations where period is used other than the end of a sentence? For example, list 1. 2. 3. or decimal 0.30, etc.
+
+no case where period has special meaning
+
+9. Are there any parts of the text file that should be ignored? (i.e. heading information or works cited section)
+
+same as previously asked
+
+How would we handle text that does not end in punctuation (for example a title that has a line break?	
+
+line breaks do not count as sentence delimiters
+
+- How should Latin abbreviations be handled (i.e., e.g., etc.)? How should acronyms be handled?
+
+no special handling
+
+15. Can you provide us with any sample essays for testing purposes?
+
+we could but prof does not want to give us a test and makes a mistake and mislead us
+
+Is the lower limit for word length inclusive or exclusive?
+
+The limit is inclusive
+
+Are bulleted lists allowed in the input .txt documents? If so, does each bullet count as a sentence and what is the bullet delimiter?
+
+If period is delimiter, it will be end of sentence, so be careful how we use.
+
+How are delimiter values supplied on the command line? Are they listed directly after the "-d" flag, with a space after, quoted, etc. Same question applies to the "-l" flag for minimum word length.
+
+We will -d space and delimiters
+-l space and minimum word length
+
+Should the program handle full unicode characters? Or, only the ASCII (128) subset?
+
+only ascii subset
+
+Since the application runs from the command line and per student, how does Lauren plan to learn the results of the students running her application?
+
+that is laurens problem and not ours
+
+How should the help / man page be used? --help flag? man <command> (though that would be isolated to linux)?
+
+do not think we should provide a main page
+
+Are there any requirements on how fast the program should run?
+
+there is a reqirement that it should be able to handle 5000 characters per second on average
+(non functional)
+
+4. How should we handle content inside parenthesis? And if it contains a sentence delimiter?
+
+answered already
+When users specify delimiters with -d, are they in lieu of the defaults, or in addition to the defaults?
+
+replace the defaults
+
+What constitutes the end of a sentence? We counted "; . ! ?" and know from video that "," is not. How about ":" and "\n"?
+
+not consider , and consider colon
+
+If a single sentence only has words that are less the then the wordlength argument, should that sentence be counted as a sentence with a length of 0, or should that sentence be excluded from the calculation?
+
+should be excluded and not considered and do lower the average
+
+Do delimiters provided with the -d flag need to be screened/validated for problematic characters? E.g., if the user attempts “-d 5”, do we use 5 as a delimiter, or do we report an error? How about a space as a sentence delimiter, do we allow it?
+
+there is no check
+
+provide?
+counts and provide average
+
+
+It is stated the purpose of this application is to perfect her student's writing style. How does total word count of a sentence achieve this goal? How valuable is an integer value (total word count) to the student as feed back?
+
+just a customer and if we disagree we develop as requested
+
+According to Lauren's video, some of the users may have very little computer know-how. Are we responsible for teaching users to use the command line who have never used the command line before?
+
+user manual show how program is executed nothing special otherwise
+
+If commas/semicolons are considered as delimiters, will the rest of the sentence be a 2nd sentence? Also, since commas are used in different contexts, how should it be handled when it doesn’t constitute a full sentence? (ex. That guy, Dave, is cool.)
+
+commas is not a default delimiter but we can specific if we wanted to with -d, there is no context or discrimination on how used
+
+JAR?
+does not need to be compiled as JAR
+
+
+- Certain delimiters have special meaning on a command line. Is it okay to require escapes, quotes, etc. (if not how should this be handled.)?
+
+depends on how are shell parses the command line and we can run from any shell and parses which handles all before our program executes. do not need to worry about. just look inside the string, not on how it gets there. just worry about reading 
+
+
+Writing a unix style man page looks to be yet another learning exercise. Can we keep it simple by providing a .md format file for documentation as well ?
+
+not our problem, just writing a program
+
+Writing a unix style man page looks to be yet another learning exercise. Can we keep it simple by providing a .md format file for documentation as well ?
+
+sure
+
+-Is there a minimum number of words to qualify as sentence? -Is capitalization mandatory at start of sentence in order to be counted?
+
+
+minimum is 1, and capitalization is not mandatory
+
+Is there sample data? Will we be provided with example essays/metrics to test against the program?
+
+they might, will post on piazza answer
+
+Is it OK if the software places a size limit on the input file, e.g., < 10 MB?
+
+if size is problematic then sure
+
+Do we need to check A-Z letter presents in the words? What determines a line is not a valid sentence but garbage input? i.e. @@@@ ### %%%% ********* ##### /\/\/\/\? Also, does a sentence need to have minimum number of words(valid)?
+
+there is no garbage input, just read it as streams of ascii bites
+
+Will the software only be used for essays written in English? For example, a word in Chinese is one, sometimes two characters long.
+
+already answered
+
+14. Will the result only go to the command line (standard out) or will it also have an option for something else like a file or GUI?
+
+only command line
+
+- Should we include a help command line argument (e.g. -?, -h, --help, etc.)?
+
+already answered
+
+Most of the questions here are technical about the program itself. Are these project management-related questions appropriate for Lauren (1) Project stakeholders? (2) Project timeline? (3) Available resources? (4) UAT? (5) Go-live & support?
+
+Lauren is not concerned with these aspects
+1) What is the maximum file size we can expect? 2) What is the default minimum word length?
+
+4, and inclusive. no max.
+
+Are there more statistics that are needed to make this information useful? (Ex: median/min/max length, std. dev) [We don’t want requirements creep, but if the goal is to help students improve writing style, at least the std dev might be very helpful
+
+no there are not
+
+How should words containing slash or hashtags be counted?
+
+answered
+
+Should we assume the file will fit into the computer's memory? Or should we read it in chunks?
+
+compute as go, but read in memory if you want
+
+If the entire essay only has words less the then the wordlength config, what should happen?
+
+just return 0
+
+Is the average just the mean or should we display different types of averages and possibly the standard deviation?
+
+just provide number that is the mean, sum of the size divide (avg)
+
+What about if there are multiple sentence deliminators? (i.e. multiple dots...)
+
+will have a bunch of sentences of 0 that wont count
+
+What expectations for speed, reliability, and security: How many helpful error messages should an avg student need to be able to use program? What is max time acceptable for program to complete running? Must user identities & output remain confidential?
+
+nothing about user identities, only requirement program should be able to read 5000 chars on avg
+
+Do we need to check file permissions at all? E.g. what if the user running the program doesn't have read access to the file they are trying to submit?
+
+dont need to check it just error cannot read
+
+What are the Error Messages the program should output, if any?
+
+should start with 'Error: then the specific message'
+
+Can we assume that the students have JRE of the appropriate version installed? Or should we include the instructions in the documentation?
+
+assume they know not our job
+
+Do world length limit provided with the "-l" flag need to be screened/validated for problematic characters? E.g., non-numeric characters, values less than 1, and white space?
+
+for the purpose of this exercise not our job to check and compute results
+
+What is considered a word? Ex: consecutive alpha characters ignoring special characters followed by a space or sentence terminator?
+
+good definition, i.e. standard white space, tab, new line, and sentence delimiters.
+
+Is there a preferred name for the program itself?
+we want it to be called 'WC' for word counter
+
+
+What rounding mode should be used? Referencing from here https://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html
+
+use standard one, up to .5 and up, and below .5 down
+
+
+Are we allow to limit type of input file? Make user have to input just docx file or just txt file. This would help us develop the software tool much faster because we do not have to guess input type.
+
+do not worry about this at all
+
+
+Does the user need to enter delimiter, min word size, and other options using inline notation (e.g. “-d” along with the option choice(s)) or can we prompt the user when the program starts?
+
+no, all in the command line
+
+P1L5 says the result should be round down to integer. But you mention the decimals?
+
+typical case contradicts, and we want to 2 point decimal and round on this. return a 'double', and round on decimal level.
+
+Team 75 question 3: “Users should be able to provide a file path to the command line to provide the input text file.” Only File system file paths or remote/URLS?
+
+only a local file
+
+
+Can we assume that the file to be analyzed will always be the 1st parameter provided?
+
+no
+
+When we talk about returning double (ceiling or flooring), we always going to have .00 as decimals. Is Lauren expecting it that way?
+
+no just rounding to 2 decimals
+
+Team 75 question 4: “Delimiters, users should be able to specify the delimiters using “-d” in the command line”. How should the delimiters be separated?
+
+How should floating point numbers be treated? They contain a period.
+
+as end of sentence if delimiter
+
+
+12. What would you like to see if there is no sentence delimiter found in the essay? Treat it as 1 sentence or produce a friendly error?
+
+one sentence
+
+11. Are other statistics important (e.g. median and standard deviation)?
+
+no
+
+Team 77: In terms of the essay's evaluation: will the essay evaluation consist of: Passed/No Passed with a feedback, or should it include others parameters as: Excellent /Good/ Essay needs improvement, with a specific feedback on each level of execution?
+
+no this is laurens job not ours
+
+- Should output go to stdout and errors to stderr, or does it matter?
+
+yes to standard ouput and errors to standard errors, THIS MATTERS.
+
+Are period(.), question mark(?), exclamation mark(!), semicolon(;), colon(:) the only delimiters that we are going to allow? Do we need to allow for the user to specify delimiters outside of this list?
+
+yes
+
+Should the data be permanently stored anywhere?
+
+no
+
+- Is auto correct done before counting the words? (i.e. What is a paragraph is terminated abruptly without the use of ; , . ? ! etc; and continues in the next line)
+
+no
+
+Team77: If the student doesn't provide input values for minimum letters per word, and sentence delimiters, then the defaults values will be: 3, and Laureen's specified delimiters respectively?
+
+its 4 (review prior answers)
+
+
+If a word is separated in two lines and jointed with a '-' ( e.g. abc-\ndefg), would it be considered as a single word or two words since there is a \n in between?
+
+no, if its a new line its a new word
+
+
+assume everything is a standard character
+
+- What delimits a word (space, tab, carriage return, line feed, etc.)?
+
+check answer
+
+
+Do some students want to access to a shared PC under their college account and be able to use the program? (Question on non-functional requirement. Clarification for accessibility)
+
+keep simple do not need
+
+How do we treat blank input or input with no sentences?
+
+Should we consider that line breaks are handled differently on Windows vs. *nix based systems?
+
+
+check answer
+
+Can the interface take delimiters as options and then prompt for subsequent input before executing via a second command (i.e. provide an ascii menu interface)?
+
+provide on command line and done
+
+The video makes it sound like we need to account for Windows/Linux/Mac, but for this class are we still just assuming the Linux VM?
+
+should be able to run on any platform
+
+What error conditions should the application check for?
+
+file exists, parsing issues, or normal exceptions
+(check answer)
+
+
+NOTE: cannot change delimiters once program started

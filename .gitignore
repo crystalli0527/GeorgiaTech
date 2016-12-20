@@ -16,12 +16,20 @@
 *.bz2
 *.tar
 checkstyle.xml
+*.pyc
+*.diff
 
 # Microsoft files #
 *.docx
 *.doc
 *.xls
 *.xlsx
+*.pdf
+
+# Images #
+*.png
+*.jpg
+*.jpeg
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

@@ -1,0 +1,42 @@
+Instructor
+Problem: Students have long, wordy sentences
+Solution: Tool to keep track of this, and perfect their writing.
+Students: 45 per unit, and up to 6 sections per semester
+Computers: Doesnt know what kind they are using.
+Computer Skills: From no tech experience to being pretty proficcient.
+Familiarity with pcs: Some who program, some with no.
+Submission: Raw text file through emails.
+
+Command Line Java based tool.
+Students can run, and will be provided documents on how to use.
+Error conditions, develop reasonable friendly messages to go with.
+
+Word: Care about longer words, > 3 letters. Make it flexible.
+Sentence: Anything that ends in a period, a question mark, or an exclamation mark. Or even with a comma or a colon. She only cares about sentences that are not gramatically correct or too long.
+
+i.e. will make configurable what is considered an end of sentence, as she seems on fence on if comma is end of a sentence.
+
+The actual end result to students is the average number of words per sentence.
+
+Customization of word length.
+
+Some kind of variablity on what we want to have as acceptable sentence structure. i.e. periods..etc
+
+End result to students is if we are successful:
+They will get the average number of words per sentence,
+otherwise we tell them something a little helpful to put them on the right track to use the toll correctly (not error codes, something nicer)
+
+
+-------
+
+Vanilla Java 1.6
+compile with javac, no options
+Executable from command line
+User specifies file path
+User specifies delimiters with -d
+User specifies word length limit w/-1
+Output average sentence length
+
+
+
+

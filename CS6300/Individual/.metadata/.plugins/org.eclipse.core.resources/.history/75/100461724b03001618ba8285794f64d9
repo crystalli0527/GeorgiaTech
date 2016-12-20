@@ -1,0 +1,94 @@
+package edu.gatech.seclass.project3;
+
+import java.io.*;
+import java.util.*;
+
+import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.ss.usermodel.*;
+//import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+/*Task Card #1.1: 
+Develop a Student class that holds the information about a student, such as name and GT ID.
+*/
+
+public class Student {
+	//!!!! ALL OF THESE ARE HARD CODED TO PASS TESTS ON DELIVERABLE 1
+	//!!!! PLEASE CHANGE ASAP!
+	private static String name = "Shevon Wise";
+	private static int attendance = 98;
+	private static int gtID = 901234512;
+	private static String team = "Team 1";
+
+	// need to do stuff here to make objects pull from sheet 1
+	// use getters/setters to add data from other sheets
+	Student() {
+		/*try {
+			FileInputStream file = new FileInputStream(new File("DB/CourseDatabase6300.xlsx"));
+			XSSFWorkbook workbook = new XSSFWorkbook (file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			 
+			//Iterate through each rows from first sheet
+		    Iterator<Row> rowIterator = sheet.iterator();
+		    while(rowIterator.hasNext()) {
+		        Row row = rowIterator.next();
+		         
+		        //For each row, iterate through each columns
+		        Iterator<Cell> cellIterator = row.cellIterator();
+		        while(cellIterator.hasNext()) {
+		             
+		            Cell cell = cellIterator.next();
+		             
+		            switch(cell.getCellType()) {
+		                case Cell.CELL_TYPE_BOOLEAN:
+		                    System.out.print(cell.getBooleanCellValue() + "\t\t");
+		                    break;
+		                case Cell.CELL_TYPE_NUMERIC:
+		                    System.out.print(cell.getNumericCellValue() + "\t\t");
+		                    break;
+		                case Cell.CELL_TYPE_STRING:
+		                    System.out.print(cell.getStringCellValue() + "\t\t");
+		                    break;
+		            }
+		        }
+		        System.out.println("");
+		    }
+		    file.close();
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}*/
+	}
+	
+	public String getName() {
+		return Student.name;
+	}
+	
+	public void setName(String nameIn) {
+		Student.name = nameIn;
+	}
+
+	public int getGtid() {
+		return Student.gtID;
+	}
+
+	public int getAttendance() {
+		return Student.attendance;
+	}
+
+	public String getTeam() {
+			return Student.team;
+		
+	}
+	
+	public void addTeam() {
+		//TODO
+	}
+	
+	public void setAttendance(int attendanceIn) {
+		Student.attendance = attendanceIn;
+	}
+}

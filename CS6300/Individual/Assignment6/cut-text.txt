@@ -1,0 +1,56 @@
+# Verify input via file/stdin/stdout
+  Using input from a file corresponding to file arg:
+	No files.	[property nofile]
+	Empty file.	 	
+	One file.
+	Multiple files.
+  Using input from stdin:
+	No input from stdin.	[error][if nofile][property stdin]
+	Input.		    	       [if nofile]
+  Using output from stdout as input:
+	No input from stdout.	[error][if nofile && !stdin]
+	Input.		               [if nofile && !stdin]
+
+# Check number of flags passed
+  Number of flags passed:
+	Zero.		[single]
+	One to Three.		
+	Four or more.   [error]
+
+# Verify which flags passed
+  Was -f passed:
+	No.		[error]
+	Yes.   		[property dashf]
+  Was -c passed:
+	No.
+	Yes.  		[property dashc]
+  Was -d passed:
+	No.
+	Yes. 		[property dashd]
+
+# Verify flags and args were passed correctly
+  Were -f fields syntactically correct:
+	No. 		[error][if dashf]
+	Yes. 		       [if dashf]
+  Were -c fields syntactically correct:
+	No.		[error][if dashc]
+	Yes.	               [if dashc]
+  Were -d fields syntactically correct:
+	No delimiter passed.		[error][if dashd]		       
+	Unenclosed quotes.		[error][if dashd]
+	Correct and butted against -d.         [if dashd]
+	Correct using enclosed quotes.	       [if dashd]
+
+# Verify args within range 
+# This is (for example) if you passed a value higher than the value 
+# in the given file to parse. Only used in -f and -c.
+# For repeated value in -f, this is (for example) if you passed 
+# a -f 1,1-4, which would run successfully using 1-4 as the range.   
+  Were -f fields within range:
+	No. 		       [if dashf]
+	Repeated value.	       [if dashf]
+	Yes. 		       [if dashf]
+  Value of -c fields:
+	<1.		       [error][if dashc]	
+	1 to MAXLENGTH.               [if dashc]
+	>MAXLENGTH.	       [error][if dashc]
