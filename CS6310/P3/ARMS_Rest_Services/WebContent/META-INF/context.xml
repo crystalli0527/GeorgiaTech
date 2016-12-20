@@ -1,0 +1,11 @@
+<Context>
+<Resource name="jdbc/ARMS_DB"
+     auth="Container"
+     type="javax.sql.DataSource"
+     username="admin"
+     password="password"
+     driverClassName="com.mysql.jdbc.Driver"
+     url="jdbc:mysql://localhost:3306/ARMS_DB"
+     maxTotal="15"
+     maxIdle="3"/>
+</Context>

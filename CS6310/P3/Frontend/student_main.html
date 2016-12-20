@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title>Student Main Page</title>
+
+<script>
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") {
+        return;
+    }
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=");
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) {
+            parms[n] = [];
+        }
+
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+
+var idStudent;
+function getIdStudent() {
+	var theURL = document.URL;
+	var stuff = parseURLParams(theURL);
+	idStudent = stuff["idStudent"];
+	return stuff["idStudent"];
+}
+
+function jumpURL( baseURL ) {
+	console.log("Got here " + baseURL );
+	window.location.href = baseURL + "?idStudent=" + idStudent;
+}
+
+</script>	
+</head>
+
+<body>
+
+	<h1>Student Main Page</h1>
+
+	<h2 id="studentHeader"></h2>
+	<a href="#" onclick="jumpURL('student_main.html');return false;">Home</a>
+	<a href="index.html">Logoff</a><br>
+	<a href="#" onclick="jumpURL('student_preferences.html');return false;">Create Preferences</a><br>
+	<a href="#" onclick="jumpURL('course_catalog.html');return false;">View Course Catalog</a><br>
+
+//TODO Finish these dropdowns
+	View Current Course Demand for:
+	<select> 
+		<option value="student">Student</option>
+		<option value="faculty">Faculty</option>
+		<option value="admin">Admin</option>
+	</select><br>
+
+	View Historical Course Requests for:
+	<select> 
+		<option value="student">Student</option>
+		<option value="faculty">Faculty</option>
+		<option value="admin">Admin</option>
+	</select>
+
+	<br><br>
+
+<script>
+var ourStuff = getIdStudent()
+document.getElementById("studentHeader").innerHTML = "Welcome Student with Id = " + ourStuff;
+</script>
+
+</body>
+
+</html>

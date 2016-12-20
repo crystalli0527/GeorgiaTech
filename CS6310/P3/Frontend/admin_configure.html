@@ -1,0 +1,96 @@
+<html>
+
+<head>
+	<title>Admin Configuration Page</title>
+</head>
+
+<body>
+
+	<h1>Admin Configuration Page</h1>
+
+	<a href="admin_main.html">Home</a>
+	<a href="index.html">Logoff</a><br>
+
+	<form action="javascript:submitPreferences()">
+		New Class Size: <input type="text" id="form_studentId" value="35" /><br />
+		<label id="question">Which Course Size Should Be Changed:</label><br />
+		<div id="answersBox">
+		</div>
+		<input type="submit" value="Submit" />
+	</form>
+
+	<b>Modify Class Size:</b>
+	<div id="scheduleResponse">
+	</div>
+	<script>
+	var courseList;
+	
+	function getCourses() {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "http://localhost:8080/ARMS_Rest_Services/api/CourseService/fetchCourses";
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+				courseList = JSON.parse(xmlhttp.responseText);
+		    		
+				for (index in courseList) {        
+					var jsonObj = courseList[index];
+					var choiceSelection = document.createElement('input');
+				    	var choiceLabel = document.createElement('label');
+				    	choiceSelection.setAttribute('type', 'radio');
+				    	choiceSelection.setAttribute('id', jsonObj["id"]);
+
+				    	choiceLabel.innerHTML=jsonObj["name"];
+				    	choiceLabel.setAttribute('for', jsonObj["name"]);
+
+				    	document.getElementById('answersBox').appendChild(document.createElement('br'));
+					document.getElementById('answersBox').appendChild(choiceSelection);
+					document.getElementById('answersBox').appendChild(choiceLabel);
+				}
+
+				document.getElementById('answersBox').appendChild(choiceSelection);
+				
+			}
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	}
+
+	function submitPreferences() {
+		console.log("Preference button clicked");
+		var studentId = document.getElementById('form_studentId').value;
+		var coursesArrayChosen = [];
+		for (index in courseList) {        
+			var RadioButtonId = courseList[index]["id"];
+			if (document.getElementById(RadioButtonId).checked) {
+  				coursesArrayChosen.push(RadioButtonId);
+			}
+		}
+		var xmlhttp = new XMLHttpRequest();
+		var url = "http://localhost:8080/ARMS_Rest_Services/api/RequestService/makeScheduleRequest";
+		xmlhttp.onreadystatechange = function() {
+		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			console.log("Successfull response");		
+			var myArr = JSON.parse(xmlhttp.responseText);
+
+			for (index in myArr["courseList"]) {        
+				var jsonObj = courseList[index];
+				var brElement = document.createElement('P');
+			    	var textElementNode = document.createTextNode("Course: " + jsonObj["name"] + " | For: " + myArr["termAvailableList"][index]);
+				brElement.appendChild(textElementNode);
+				document.getElementById('scheduleResponse').appendChild(brElement);
+			}				
+		    }
+		}
+
+		xmlhttp.open("PUT", url, true);
+		xmlhttp.send('{ "idStudent" : "' + studentId + '","courseList" : [' + coursesArrayChosen + '] }');
+	}
+
+	getCourses();
+
+	</script>
+
+
+</body>
+
+</html>

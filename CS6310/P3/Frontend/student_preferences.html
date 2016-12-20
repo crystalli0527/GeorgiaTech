@@ -1,0 +1,136 @@
+<html>
+
+<head>
+	<title>Submit Course Preferences</title>
+	
+<script>
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") {
+        return;
+    }
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=");
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) {
+            parms[n] = [];
+        }
+
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+
+var idStudent;
+function getIdStudent() {
+	var theURL = document.URL;
+	var stuff = parseURLParams(theURL);
+	idStudent = stuff["idStudent"];
+	return stuff["idStudent"];
+}
+
+function jumpURL( baseURL ) {
+	console.log("Got here " + baseURL );
+	window.location.href = baseURL + "?idStudent=" + idStudent;
+}
+	
+getIdStudent();  // Fetches the idStudent from the URL;
+
+</script>
+
+</head>
+
+<body>
+
+	<h1>Course Preferences</h1>
+	<form action="javascript:submitPreferences()">
+		Student ID: <input type="text" id="form_studentId" value="studentId" /><br />
+		<label id="question">Select Which Courses Interest You:</label><br />
+		<div id="answersBox">
+		</div>
+		<input type="submit" value="Submit" />
+	</form>
+
+	<b>Generated Possible Schedule:</b>
+	<div id="scheduleResponse">
+	</div>
+	<script>
+	var courseList;
+	
+	function getCourses() {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "http://localhost:8080/ARMS_Rest_Services/api/CourseService/fetchCourses";
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+				courseList = JSON.parse(xmlhttp.responseText);
+		    		
+				for (index in courseList) {        
+					var jsonObj = courseList[index];
+					var choiceSelection = document.createElement('input');
+				    	var choiceLabel = document.createElement('label');
+				    	choiceSelection.setAttribute('type', 'radio');
+				    	choiceSelection.setAttribute('id', jsonObj["id"]);
+
+				    	choiceLabel.innerHTML=jsonObj["name"];
+				    	choiceLabel.setAttribute('for', jsonObj["name"]);
+
+				    	document.getElementById('answersBox').appendChild(document.createElement('br'));
+					document.getElementById('answersBox').appendChild(choiceSelection);
+					document.getElementById('answersBox').appendChild(choiceLabel);
+				}
+
+				document.getElementById('answersBox').appendChild(choiceSelection);
+				
+			}
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	}
+
+	function submitPreferences() {
+		console.log("Preference button clicked");
+		var studentId = document.getElementById('form_studentId').value;
+		var coursesArrayChosen = [];
+		for (index in courseList) {        
+			var RadioButtonId = courseList[index]["id"];
+			if (document.getElementById(RadioButtonId).checked) {
+  				coursesArrayChosen.push(RadioButtonId);
+			}
+		}
+		var xmlhttp = new XMLHttpRequest();
+		var url = "http://localhost:8080/ARMS_Rest_Services/api/RequestService/makeScheduleRequest";
+		xmlhttp.onreadystatechange = function() {
+		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			console.log("Successfull response");		
+			var myArr = JSON.parse(xmlhttp.responseText);
+
+			for (index in myArr["courseList"]) {        
+				var jsonObj = courseList[index];
+				var brElement = document.createElement('P');
+			    	var textElementNode = document.createTextNode("Course: " + jsonObj["name"] + " | For: " + myArr["termAvailableList"][index]);
+				brElement.appendChild(textElementNode);
+				document.getElementById('scheduleResponse').appendChild(brElement);
+			}				
+		    }
+		}
+
+		xmlhttp.open("PUT", url, true);
+		xmlhttp.send('{ "idStudent" : "' + idStudent + '","addedByAdmin":"false","courseList" : [' + coursesArrayChosen + '] }');
+	}
+
+	getCourses();
+
+	</script>
+	
+</body>
+
+
+</html>

@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<title>Admin Reports</title>
+
+<style>
+table {
+    font-family: arial, san-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd
+}
+</style>	
+
+</head>
+
+<body>
+
+	<h1>Admin Reports</h1>
+
+	<a href="admin_main.html">Home</a>
+
+	<a href="index.html">Logoff</a><br>
+
+
+<h1>Basic Statistics</h1>
+<p id="totalStudents"></p>
+<p id="scheduleRequests"></p>
+
+<h1>Course Student Count</h1>
+<table id="courseCatalogTable">
+<tr>
+	<th>Course Name</th>
+	<th>Course Id</th>
+	<th>Number of Student Requests</th>
+</tr>
+</table>
+<script>
+
+function getTotalStudents() {
+
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://localhost:8080/ARMS_Rest_Services/api/StudentService/fetchStudents";
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+			var studentList = JSON.parse(xmlhttp.responseText);
+			var totalStudents = studentList.length;
+			document.getElementById("totalStudents").innerHTML = "Total Students = " + totalStudents;
+			getTotalScheduleRequests();
+		}		    					
+	};
+
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+}
+
+function getTotalScheduleRequests() {
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://localhost:8080/ARMS_Rest_Services/api/RequestService/fetchAllRequests";
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+			console.log(xmlhttp.responseText);
+			var requestList = JSON.parse(xmlhttp.responseText);
+			var totalRequests = requestList.length;
+			document.getElementById("scheduleRequests").innerHTML = "Total Student Requests = " + totalRequests;
+			getCourseRequests();
+		}		    					
+	};
+
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+}
+
+function getCourseRequests() {
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://localhost:8080/ARMS_Rest_Services/api/RequestService/fetchCourseRequests";
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+			console.log(xmlhttp.responseText);
+			var requestList = JSON.parse(xmlhttp.responseText);
+			var myTable = document.getElementById("courseCatalogTable");
+			for (index in requestList) {        
+				var jsonObj = requestList[index];
+				var row = myTable.insertRow(-1);  // Last Element
+				var nameCell = row.insertCell(0);
+				var idCell = row.insertCell(1);
+				var countCell = row.insertCell(2);
+
+			    nameCell.innerHTML=jsonObj["courseName"];			    
+			    idCell.innerHTML=jsonObj["idCourse"];
+			    countCell.innerHTML=jsonObj["studentCount"];
+			}
+
+		}		    					
+	};
+
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+}
+
+
+
+getTotalStudents();
+</script>
+
+</body>
+
+</html>

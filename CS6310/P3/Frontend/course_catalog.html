@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>Course Catalog</title>
+</head>
+
+<body>
+
+	<a href="student_main.html">Home</a>
+	<a href="index.html">Logoff</a><br>
+
+	<h1>Course Catalog</h1>
+	<div id="courseCatalog">
+	</div>
+
+	<script>
+	var courseList;
+	
+	function getCourses() {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "http://localhost:8080/ARMS_Rest_Services/api/CourseService/fetchCourses";
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {	
+				courseList = JSON.parse(xmlhttp.responseText);
+		    		
+				for (index in courseList) {        
+					var jsonObj = courseList[index];
+					var choiceSelection = document.createElement('label');
+				    	var choiceLabel = document.createElement('label');
+				    	//choiceSelection.setAttribute('type', 'radio');
+				    	choiceSelection.setAttribute('id', jsonObj["id"]);
+
+				    	choiceLabel.innerHTML=jsonObj["name"];
+				    	choiceLabel.setAttribute('for', jsonObj["name"]);
+
+				    	document.getElementById('courseCatalog').appendChild(document.createElement('br'));
+					document.getElementById('courseCatalog').appendChild(choiceSelection);
+					document.getElementById('courseCatalog').appendChild(choiceLabel);
+				}
+
+				document.getElementById('courseCatalog').appendChild(choiceSelection);
+				
+			}
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	}
+
+	getCourses();
+
+	</script>
+</body>
+
+</html>

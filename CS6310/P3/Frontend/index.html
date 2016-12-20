@@ -1,0 +1,73 @@
+<html>
+
+<head>
+	<title>ARMS Login Page</title>
+</head>
+
+<body>
+
+	<h1>ARMS LOGIN PAGE</h1>
+
+
+	Login As:
+	<select id="ddlViewBy">
+		<option value="student">Student</option>
+		<option value="admin">Admin</option>
+	</select>
+
+	<br><br>
+
+	<form action="javascript:handleClick()">
+		Username: <input type="text" id="form_user" name="user"><br>
+		Password: <input type="password" id="form_password" name="password"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	For testing:<br>
+	<a href="student_main.html">Student</a><br>
+	<a href="admin_main.html">Admin</a><br>
+
+	<script>
+	function handleClick() {
+		console.log("Login button clicked");
+		var studentId = document.getElementById('form_user').value;
+		var password = document.getElementById('form_password').value;
+		var e = document.getElementById("ddlViewBy");
+		var strUserType = e.options[e.selectedIndex].value;
+		if( strUserType == "admin" ) {
+			window.location.href = "admin_main.html";
+		} else {
+
+			var xmlhttp = new XMLHttpRequest();
+			var url = "http://localhost:8080/ARMS_Rest_Services/api/StudentService/login";
+			xmlhttp.onreadystatechange = function() {
+			    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				console.log("Successfull response");
+				console.log(xmlhttp.responseText);		
+				var myArr = JSON.parse(xmlhttp.responseText);
+				console.log(myArr);
+				redirectPage(myArr);
+			    }
+			};
+			xmlhttp.open("POST", url, true);
+			xmlhttp.send('{ "studentId" : "' + studentId + '","password" : "' + password + '" }');
+		}
+	}
+	
+	function redirectPage(arr) {
+		if (arr.authenticated == "true") {
+			var e = document.getElementById("ddlViewBy");
+			var strUser = e.options[e.selectedIndex].value;
+			if (strUser == "student") { window.location.href = "student_main.html?studentId=" + arr.studentId + "&idStudent=" + arr.idStudent; }
+			else if (strUser == "admin") { window.location.href = "admin_main.html?studentId=" + arr.studentId + "&idStudent=" + arr.idStudent; }
+			else { window.location.href = "faculty_main.html?studentId=" + arr.studentId + "&idStudent=" + arr.idStudent; }
+		}
+		else {
+			window.location.href = "index.html";
+		}		
+	}
+	</script>
+</body>
+
+
+</html>
