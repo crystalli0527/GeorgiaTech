@@ -8,5 +8,20 @@
 *.war
 *.ear
 
+# Others #
+*.out
+*.tar.gz
+*.zip
+*.gzip
+*.bz2
+*.tar
+checkstyle.xml
+
+# Microsoft files #
+*.docx
+*.doc
+*.xls
+*.xlsx
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
